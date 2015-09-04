@@ -1,0 +1,1 @@
+c:\progra~1\makepimp\makepimp.exe c:\gen_fido\pimp\gen_fido.psc

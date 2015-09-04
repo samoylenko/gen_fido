@@ -1,0 +1,263 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Russian resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+#ifdef _WIN32
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Gen_Fido.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Russian resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 3,0,0,0
+ PRODUCTVERSION 3,0,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x29L
+#else
+ FILEFLAGS 0x28L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "No\0"
+            VALUE "CompanyName", "Michael Samoylenko, powermike@narod.ru, 2:5064/33.25@fidonet\0"
+            VALUE "FileDescription", "PowerMike's Fido Plug-In v3.0 For Winamp\0"
+            VALUE "FileVersion", "3, 0, 0, 0\0"
+            VALUE "InternalName", "Gen_Fido\0"
+            VALUE "LegalCopyright", "Copyright (C) 2001, Michael Samoylenko\0"
+            VALUE "LegalTrademarks", "Copyright (C) 2001, Michael Samoylenko\0"
+            VALUE "OriginalFilename", "Gen_Fido.DLL\0"
+            VALUE "PrivateBuild", "3.0\0"
+            VALUE "ProductName", "PowerMike's Fido Plug-In v3.0 For Winamp\0"
+            VALUE "ProductVersion", "3, 0, 0, 0\0"
+            VALUE "SpecialBuild", "No\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_CFGDLG DIALOGEX 0, 0, 300, 260
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Configure PowerMike's Fido Plug-In v3.0"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Enable",IDC_CHECKACTIVE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,7,7,38,10
+    EDITTEXT        IDC_EDTFILE,92,27,143,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "&Browse",IDC_BTNFILE,237,27,50,13
+    EDITTEXT        IDC_EDTTPL,92,41,195,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDTPLAYING,91,81,195,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDTPAUSED,91,95,195,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDTSTOPPED,91,109,195,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDTERROR,91,123,195,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDTNOWAMP,91,137,195,12,ES_AUTOHSCROLL
+    CONTROL         "Paused only",IDC_CHKPAUSED,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,91,159,195,8
+    CONTROL         "Stopped only",IDC_CHKSTOPPED,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,91,170,195,8
+    CONTROL         "Cut outstring ( in symbols )",IDC_CHKCUTSTR,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,91,181,97,8
+    EDITTEXT        IDC_EDTCUTSYMBS,189,179,28,12,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPNCUTSYMBS,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS,214,179,11,12
+    CONTROL         "Translate to DOS ( with russian 'H' and 'p' to latin )",
+                    IDC_CHKTODOS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,91,
+                    203,195,10
+    EDITTEXT        IDC_EDTTEST,91,216,195,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_TABSTOP
+    DEFPUSHBUTTON   "&Save",IDOK,243,239,50,14
+    PUSHBUTTON      "&Cancel",IDCANCEL,192,239,50,14
+    PUSHBUTTON      "Set &defaults",IDC_BTNDEFAULTS,130,239,60,14
+    PUSHBUTTON      "",IDC_BTNPREV,234,7,11,10,BS_ICON | BS_LEFT | BS_TOP | 
+                    NOT WS_TABSTOP,WS_EX_STATICEDGE
+    PUSHBUTTON      "",IDC_BTNPLAY,246,7,11,10,BS_ICON | BS_LEFT | BS_TOP | 
+                    NOT WS_TABSTOP,WS_EX_STATICEDGE
+    PUSHBUTTON      "",IDC_BTNPAUS,258,7,11,10,BS_ICON | BS_LEFT | BS_TOP | 
+                    NOT WS_TABSTOP,WS_EX_STATICEDGE
+    PUSHBUTTON      "",IDC_BTNSTOP,270,7,11,10,BS_ICON | BS_LEFT | BS_TOP | 
+                    NOT WS_TABSTOP,WS_EX_STATICEDGE
+    PUSHBUTTON      "",IDC_BTNNEXT,282,7,11,10,BS_ICON | BS_LEFT | BS_TOP | 
+                    NOT WS_TABSTOP,WS_EX_STATICEDGE
+    GROUPBOX        "Preferences",IDC_STATIC,7,17,286,217
+    LTEXT           "powermike@narod.ru 2:5064/33.25@fidonet",IDC_STATIC,7,
+                    237,76,16
+    RTEXT           "Path ::",IDC_STATIC,18,27,71,12,SS_CENTERIMAGE
+    RTEXT           "Template ::",IDC_STATIC,18,41,71,12,SS_CENTERIMAGE
+    GROUPBOX        "Secondary templates",IDC_STATIC,7,71,286,85
+    RTEXT           "Playing ::",IDC_STATIC,18,81,71,12,SS_CENTERIMAGE
+    RTEXT           "Paused ::",IDC_STATIC,18,95,71,12,SS_CENTERIMAGE
+    RTEXT           "Stopped ::",IDC_STATIC,18,109,71,12,SS_CENTERIMAGE
+    RTEXT           "Error ::",IDC_STATIC,18,123,71,12,SS_CENTERIMAGE
+    RTEXT           "No Winamp ::",IDC_STATIC,18,137,71,12,SS_CENTERIMAGE
+    RTEXT           "Test ::",IDC_STATIC,18,216,71,12,SS_CENTERIMAGE
+    LTEXT           "%1 :: Title",IDC_STATIC,92,56,195,8
+    CONTROL         "Add ""..."" at the end of cutted string",IDC_CHKADDDOTS,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,91,192,195,10
+    LTEXT           "%2 :: Status",IDC_STATIC,92,64,195,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_CFGDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 293
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 253
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_NEXT                ICON    DISCARDABLE     "res\\next.ico"
+IDI_PAUS                ICON    DISCARDABLE     "res\\pause.ico"
+IDI_PLAY                ICON    DISCARDABLE     "res\\play.ico"
+IDI_PREV                ICON    DISCARDABLE     "res\\prev.ico"
+IDI_STOP                ICON    DISCARDABLE     "res\\stop.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TIPEDTTPL           "Outstring is generated from this template"
+    IDS_TIPEDTCUTSYMBS      "Maximum symbols in outstring"
+    IDS_TIPEDTERROR         "Unable to get the song title"
+    IDS_TIPEDTFILE          "Output file name"
+    IDS_TIPEDTNOWAMP        "Winamp is closed"
+    IDS_TIPEDTPAUSED        "Status :: paused"
+    IDS_TIPEDTPLAYING       "Status :: playing"
+    IDS_TIPEDTSTOPPED       "Status :: stopped"
+    IDS_TIPEDTTEST          "This is the generated string"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\Gen_Fido.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
