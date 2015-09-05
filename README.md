@@ -1,4 +1,4 @@
-This project is dated 2000-2001 and is for an old version of WinAmp. 
+This project is dated 2000-2001 and is for WinAmp 2
 
 Below is screenshots and the original readme file:
 
