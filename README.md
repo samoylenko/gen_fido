@@ -54,3 +54,5 @@ Below is screenshots and the original readme file:
  '@' - golded's token for insertion random string from an external file
  ( see golded documentation )
 ```
+Original location: http://www.winamp.com/components/detail.jhtml?componentId=74889  
+Web Archive: http://web.archive.org/web/20030811224235/http://www.winamp.com/components/detail.jhtml?componentId=74889
